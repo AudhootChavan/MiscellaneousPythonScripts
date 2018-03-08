@@ -2,15 +2,11 @@
 import urllib.request
 import json
 import re
-
-#Get Google maps API key for distance matrix here: https://developers.google.com/maps/documentation/distance-matrix/
-#Get token and key for twitter here:   https://apps.twitter.com/
-
-
 #For twitter
 import tweepy 
 
-
+#Get Google maps API key for distance matrix here: https://developers.google.com/maps/documentation/distance-matrix/
+#Get token and key for twitter here:   https://apps.twitter.com/
 
 
 # Part 1:  Update Twitter Status function
@@ -34,12 +30,9 @@ def tweet_update(tweet):
   api = get_api(cfg)
   status = api.update_status(status=tweet) 
 
-
   
   
-  
-  
-#Part 2: Google Maps api 
+# Part 2:  Google Maps api 
 
 
 def get_distance():
